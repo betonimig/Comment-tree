@@ -39,8 +39,8 @@
 Для устранения проблемы поиска предков скомбинируем данный подход с Adjacency List добавив поле parent_id.
 
 ### Технологии
-Раньше не писал на Python 3.5 с Asyncio - решил попрбывать.
-Также использовал [aiohttp](http://aiohttp.readthedocs.io/en/stable/index.html).
+Раньше не писал на Python 3.5 с Asyncio - решил попрбывать.\
+Также использовал [aiohttp](http://aiohttp.readthedocs.io/en/stable/index.html).\
 База данных - PosgreSQL 9.5 и расширение [ltree](https://postgrespro.ru/docs/postgresql/9.5/ltree) с помошью которого и был реализован подход - Materialized Path.
 
 ### API
