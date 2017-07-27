@@ -1,0 +1,13 @@
+aiohttp==2.2.3
+aiopg==0.13.0
+pathtools==0.1.2
+PyYAML==3.12
+SQLAlchemy==1.1.12
+
+pytest-aiohttp
+pytest-cov
+pytest
+
+aiohttp-devtools==0.5
+aiohttp-debugtoolbar==0.4.0
+flake8==3.3.0
