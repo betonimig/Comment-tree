@@ -91,7 +91,8 @@ GET: `/comments/{entity_type}/{entity_id}/?page={num}`
 
 #### Установка
 ```sh
-./install.sh```
+./install.sh
+```
 
 #### А где же тесты?
 >Тесты скоро будут!
