@@ -5,6 +5,10 @@ async def test_get_comment(cli, app_db):
     assert response.status == 200
     assert 'Test comment' in await response.text()
 
+    response = await cli.get('/comment/')
+    assert response.status == 200
+    assert 'error' in await response.text()
+
 
 async def test_update_comment(cli, app_db):
     text = "New text"
