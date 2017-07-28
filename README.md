@@ -98,7 +98,8 @@ GET: `/comments/{entity_type}/{entity_id}/?page={num}`
 Пока их мало.
 
 ```sh
-pytest tests```
+pytest tests
+```
 
 
 
