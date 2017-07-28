@@ -93,6 +93,11 @@ GET: `/comments/{entity_type}/{entity_id}/?page={num}`
 ```sh
 ./install.sh```
 
-#### А где же тесты?
->Тесты скоро будут!
+#### Тесты
+Пока их мало.
+
+```sh
+pytest tests```
+
+
 
