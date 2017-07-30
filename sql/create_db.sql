@@ -20,9 +20,9 @@ CREATE TABLE "comments_tbl" (
 CREATE INDEX "comments_parent_id_idx" ON "comments_tbl" ("parent_id");
 CREATE INDEX "comments_user_id_idx" ON "comments_tbl" ("user_id");
 --- B-дерево по значениям ltree: <, <=, =, >=, >
-CREATE INDEX "path_idx" ON "comments_tbl" USING BTREE ("ltree_path");
+CREATE INDEX "path_idx" ON "comments_tbl" USING BTREE ("ltree_path") WHERE NOT "is_removed";
 --- GiST по значениям ltree: <, <=, =, >=, >, @>, <@, @, ~, ?
-CREATE INDEX "path_gist_idx" ON "comments_tbl" USING GIST ("ltree_path");
+CREATE INDEX "path_gist_idx" ON "comments_tbl" USING GIST ("ltree_path") WHERE NOT "is_removed";
 ---CREATE INDEX "comments_object_id_type" 
 
 --- обновляет material path у новых комментариев
