@@ -50,7 +50,7 @@ class CommentsTreeDAO:
                     parent_id,
                     nlevel(ltree_path) as level
                 FROM comments_tbl comm, users_tbl u
-                WHERE comm.user_id=u.id AND"""
+                WHERE comm.user_id=u.id AND NOT is_removed AND """
         where = ""
         params = []
 
